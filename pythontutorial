@@ -1,0 +1,42 @@
+10 / 2  = 5.0
+
+10 // 4 = 2
+
+
+/ 		will always give answer in float
+
+
+// 		will always give answer as integer output
+
+'''   ''' 	multi line comment in python
+
+#    		to use single line comment
+
+**   		power 
+
+not True  == false
+
+not False == True
+
+1 == 1 and 0 == 0 and 3 == 0 will return true. we can use and instead of && both are same
+
+
+primitive data types
+float
+int
+string
+boolean
+None
+array
+dictionary
+list
+tuple
+set()
+
+store by value     for simple primitive data types
+store by refrence   for complex data types
+
+
+is check the memory address
+
+

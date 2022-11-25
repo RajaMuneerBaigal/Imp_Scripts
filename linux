@@ -1,0 +1,8 @@
+Kernal - An important part of linux operating system which helps in communication between applications in a software and the hardwares installed in the machine. It acts as a backbone between applications and computer hardware.
+
+GNU - GNU actually is an animal, back in 1980's an engineer was working on a project who wanted to build a full free open source operating system. By free open source means any one can use it for free alter it and make flavours according to his need. While he was working on several GNU components he missed a kernal. Linus Trovald created a kernel they both integrated the kernal and GNU components together to create a free open source software called linux. Linux has more than 1000 of flavours since then. Each with same kernal but with different GNU components like window manager, shells, etc.
+
+Shell -  A shell is computer interface to an operating system.Shell exposes the OS services to user and other applications. The shell takes our commands and gives them to the operating system to perform.
+It's named a shell because it is the outer layer around the OS. 
+
+Terminal - A  terminal is a program that runs a shell. Originally, terminals were physical devices but these days we work with software terminals.
