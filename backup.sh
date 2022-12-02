@@ -32,7 +32,7 @@ echo "Now trying to push every volume to github"
 cd 
 cd /home/raju/backups/volumes
 
-
+pat=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
 for file in *; do
 	if [ -d "$file" ]; then
 	echo $file
@@ -48,8 +48,11 @@ fi
 reponame=$file
 # create repo
 echo "Creating Github repository '$reponame' ..."
-curl  https://"RajaMuneerBaigal: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"@api.github.com/user/repos -d '{"name":"'$reponame'"}'
+curl -u $username:$pat  https://api.github.com/user/repos -d '{"name":"'$reponame'","private":false}' 
 echo " done."
+
+#setting the visibility or previously created repositories to private
+curl   -X PATCH   -H "Accept: application/vnd.github+json"  https://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@api.github.com/repos/RajaMuneerBaigal/$file   -d '{"name":"'$file'>
 
 # create empty README.md
 echo "Creating README ..."
@@ -62,8 +65,7 @@ git init
 git add -A
 git commit -m "first commit"
 git remote rm origin
-
-git remote add origin https://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@github.com/$username/$reponame.git
+git remote add origin https://$username:$pat@github.com/$username/$reponame.git
 git push -u origin master
 echo " done."
 echo
